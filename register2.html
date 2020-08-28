@@ -1,0 +1,49 @@
+<html>
+
+<head>
+  <title></title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Cabin|Oswald|Source+Sans+Pro&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style2.css">
+</head>
+
+<body>
+  <div class="input-container">
+    <h1>REGISTER</h1>
+
+    <form id="card-form">
+      <input type="text" id="MYfirstname" placeholder="insert first name here" required>
+      <input type="text" id="MYlastname" placeholder="insert last name here" required>
+      <input type="email" id="MYemail" placeholder="insert email here" required>
+      <input type="text" id="MYusername" placeholder="insert user name here" required>
+      <input type="text" id="MYpassword" placeholder="insert password here" required>
+      <input type="text" id="MYinfo" placeholder="insert a short description here" required>
+      
+      
+      <input type="submit" value="S U B M I T">
+
+      <a href="index.html">HOME</a>
+      <a href="blog.html">BLOG</a>
+    </form>
+    
+  </div>
+
+  <script>
+    function generate(event) {
+      event.preventDefault();
+      var name = $("#MYfirstname").val();
+      var name = $("#MYlastname").val();
+      var email = $("#MYemail").val();
+      var username = $("#MYusername").val();
+      var password = $("#MYpassword").val();
+      var number = $("#MYnumber").val();
+      var description = $("#MYinfo").val();
+    }
+    
+    $("#card-form").submit(generate);
+
+  </script>
+
+</body>
+
+</html>

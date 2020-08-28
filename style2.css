@@ -1,0 +1,79 @@
+body {
+  background-color: #00b894;
+  padding: 40px;
+}
+
+.card {
+  width: 420px;
+  height: 200px;
+  margin: auto;
+  position: relative;
+  padding: 12px;
+  background-color: aqua;
+  border: 3px solida aqua;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px 0 aqua;
+  text-align: center;
+  cursor: pointer;
+}
+
+.input-container {
+  background-color: white;
+  width: 400px;
+  margin: 50px auto;
+  text-align: center;
+  padding: 40px;
+  border-radius: 20px;
+}
+
+.input-container > h1{ 
+  font-family: 'Oswald', sans-serif;
+}
+
+input[type="submit"] {
+  border: 1px solid aqua;
+  background-color:rgb(255, 255, 255);
+  cursor: pointer;
+  padding: 10px;
+  color: aqua;
+}
+
+input[type="color"] {
+  height: 40px;
+}
+
+input {
+  display: block;
+  margin: 20px auto;
+  width: 100%;
+  padding: 5px;
+  outline: none;
+  font-family: 'Source Sans Pro', sans-serif;
+  border: none;
+  border-bottom: 1px solid;
+}
+
+input:invalid {
+  color: red;
+  border-color: red;
+}
+
+input:valid {
+  color: green;
+  border-color: green;
+}
+
+label {
+  font-family: 'Source Sans Pro', sans-serif;
+  color: gray;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+a:hover {
+  color:darkgrey;
+}
