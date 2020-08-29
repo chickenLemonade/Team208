@@ -89,5 +89,9 @@ a:hover {
 #blog_heading{
 text-align: center;
 font-family: 'Russo One', sans-serif;
-font-size: 
+font-size: 50px;
+}
+
+#blogbutton1{
+  text-align: center;
 }
