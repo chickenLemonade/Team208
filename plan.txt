@@ -1,4 +1,6 @@
-OKAY SO WHAT DO YOU NEED FOR THE WEBSITE
+CHECKLIST
 
 - styling the blog page
--FYI I will probo change a good deal of stuff on the home page! ~ GeekyCoder
+- finishing the bot
+- making the credits look good
+- FYI I will probo change a good deal of stuff on the home page! ~ GeekyCoder

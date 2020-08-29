@@ -2,6 +2,10 @@ body {
   font-family: 'Lato', sans-serif;
 }
 
+#userBox {
+  font-family: 'Lato', sans-serif;
+}
+
 .home {
   text-align: center;
 }
@@ -54,6 +58,10 @@ a:hover {
   left: 80%;
 }
 
+#homeBlog {
+  text-align: center;
+}
+
 #home_scrolling_text{
   font-size: 30px;
   color: bisque;
@@ -69,3 +77,15 @@ a:hover {
   bottom: 0px;
 }
 
+.blog {
+  background-color: cadetblue;
+  border-radius: 20px;
+  width: 75%;
+  margin: auto;
+  text-align: center;
+  height: 50px;
+}
+
+#blog {
+  padding: 5px;
+}
