@@ -1,36 +1,37 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    
-    <title>Home Page</title>
+<head>
+<title>Bot</title>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../styles/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   </head>
   <body>
-<html>
-    <head>
+
         <script>
             know = {
-                "Hello" : "hi",
-                "How are you" : "good",
-                "Ok" : ":)"
+                "Hello": "Hi",
+                "How are you" : "Good",
+                "Ok" : ":)",
+                "ur cool" : "noiceeeee"
             };
             function talk() {
                 var user = document.getElementById("userBox").value;
+                // var user = input.toLowerCase()
                 document.getElementById("userBox").value = "";
+                $("#chatLog").attr("color", "red");
                 document.getElementById("chatLog").innerHTML += user+"<br>";
                 if (user in know) {
-                    document.getElementById("chatLog").innerHTML += know[user]+"<br>";
+                    $("#chatLog").attr("color", "blue");
+                    var speak = document.getElementById("chatLog").innerHTML += know[user] + "<br>";
                 } else {
-                    document.getElementById("chatLog").innerHTML += "I don't understand...<br>";
+                    document.getElementById("chatLog").innerHTML += "Bot: I don't understand...<br>";
                 }
             } 
         </script>
-    </head>
-    <body>
         <p id="chatLog">- - C H A T - -<br></p>
-        <input placeholder='Say something to the bot!'id="userBox" type="text" onkeydown="if (event.keyCode == 13) {talk()}">
-    </body>
-</html>
+        <input placeholder='Talk to the bot!'id="userBox" type="text" onkeydown="if (event.keyCode == 13) {talk()}">
+        <p id="responses"></p>
+        <h2><a href="../index.html" id='homeBlog' class='link'>Home</a></h2>
   </body>
 </html>
