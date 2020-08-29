@@ -1,0 +1,13 @@
+#userText {
+  color: darkblue;
+}
+
+#responses {
+  color: coral;
+}
+
+.chatBoxInputArea {
+  outline:none;
+  border: 1px solid gainsboro;
+  background-color:aliceblue;
+}

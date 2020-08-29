@@ -3,7 +3,7 @@
 <head>
 <title>Bot</title>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="best.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   </head>
   <body>
@@ -19,18 +19,20 @@
                 var user = document.getElementById("userBox").value;
                 // var user = input.toLowerCase()
                 document.getElementById("userBox").value = "";
-                $("#chatLog").attr("color", "red");
-                document.getElementById("chatLog").innerHTML += user+"<br>";
+                // document.getElementById("userText").innerHTML += "You: " + user+"<br>";
+                $("#userText").text("You: " + user);
+                // ^ no bot history but looks cleaner
                 if (user in know) {
-                    $("#chatLog").attr("color", "blue");
-                    var speak = document.getElementById("chatLog").innerHTML += know[user] + "<br>";
+                    // var speak = document.getElementById("responses").innerHTML += "Bot: " + know[user] + "<br> <br>";
+                    $("#responses").text("Bot: " + know[user]);
                 } else {
-                    document.getElementById("chatLog").innerHTML += "Bot: I don't understand...<br>";
+                    document.getElementById("chatLog").innerHTML += "Bot: I don't understand... <br> <br>";
                 }
             } 
         </script>
         <p id="chatLog">- - C H A T - -<br></p>
-        <input placeholder='Talk to the bot!'id="userBox" type="text" onkeydown="if (event.keyCode == 13) {talk()}">
+        <input placeholder='Talk to the bot!'id="userBox" type="text" onkeydown="if (event.keyCode == 13) {talk()}" class="chatBoxInputArea">
+        <p id="userText"></p>
         <p id="responses"></p>
         <h2><a href="../index.html" id='homeBlog' class='link'>Home</a></h2>
   </body>
