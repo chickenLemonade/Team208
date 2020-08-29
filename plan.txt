@@ -1,11 +1,4 @@
 OKAY SO WHAT DO YOU NEED FOR THE WEBSITE
 
-
-
-Can you work on a credits area and the blog section?
-Also when we are about to code go to genral voice chat.
-Towards the end we will work on the css together make sure to give everything an id or class i made the mistake of not doing that so now i have to go back and do it.
-
-
-
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+- styling the blog page
+-FYI I will probo change a good deal of stuff on the home page! ~ GeekyCoder

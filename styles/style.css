@@ -9,13 +9,12 @@ body {
 #home {
   font-size: 72px;
   animation-name: animateHome;
-  animation-duration: 5s;
+  animation-duration: 3s;
   animation-iteration-count: infinite;
 }
 
 @keyframes animateHome {
-  0% {transform: rotate(0deg);}
-  45% {transform: rotate(5deg);}
+  33% {transform: rotate(5deg);}
   75% {transform: rotate(-5deg);}
 }
 
@@ -63,3 +62,10 @@ a:hover {
   background-color: cadetblue;
   bottom: 0px;
 }
+
+#scrollingtext1{
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+}
+
