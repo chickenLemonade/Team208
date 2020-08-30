@@ -1,0 +1,43 @@
+body {
+  font-family: 'Lato', sans-serif;
+}
+
+a {
+  color: azure;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+a:hover {
+  color: darksalmon;
+}
+
+.blog {
+  background-color: cadetblue;
+  border-radius: 20px;
+  width: 75%;
+  margin: auto;
+  text-align: center;
+  height: 40px;
+}
+
+#blog_heading{
+  text-align: center;
+  font-family: 'Russo One', sans-serif;
+  font-size: 50px;
+}
+
+#blogbutton1{
+  text-align: center;
+}
+.blogPage{
+  background-image:url("../images/bg2.jpg"); 
+  background-size: cover;
+  background-repeat: no-repeat; 
+}
+
+#scrollingtext1{
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+}

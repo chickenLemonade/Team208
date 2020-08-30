@@ -8,32 +8,64 @@
   </head>
   <body>
 
-        <script>
-            know = {
-                "Hello": "Hi",
-                "How are you" : "Good",
-                "Ok" : ":)",
-                "ur cool" : "noiceeeee"
-            };
-            function talk() {
-                var user = document.getElementById("userBox").value;
-                // var user = input.toLowerCase()
-                document.getElementById("userBox").value = "";
-                // document.getElementById("userText").innerHTML += "You: " + user+"<br>";
-                $("#userText").text("You: " + user);
-                // ^ no bot history but looks cleaner
-                if (user in know) {
-                    // var speak = document.getElementById("responses").innerHTML += "Bot: " + know[user] + "<br> <br>";
-                    $("#responses").text("Bot: " + know[user]);
-                } else {
-                    document.getElementById("chatLog").innerHTML += "Bot: I don't understand... <br> <br>";
-                }
-            } 
-        </script>
+        <!--
         <p id="chatLog">- - C H A T - -<br></p>
-        <input placeholder='Chat with the bot!'id="userBox" type="text" onkeydown="if (event.keyCode == 13) {talk()}" class="chatBoxInputArea">
+        <input id="userBox" type="text" onkeydown="if (event.keyCode == 13) {talk()}" class="chatBoxInputArea">
         <p id="userText"></p>
         <p id="responses">Bot: Ask a question</p>
+         -->
         <h2><a href="../index.html" id='homeBlog' class='link'>Home</a></h2>
+        
+        <div class="bot">
+          <h5 id="hide">Hide Chat</h5>
+          <h3 id="title">Chat with the bot</h3>
+          <p id="userText">You: Hello.</p>
+          <br>
+          <p id="responses">Bot: Hello. I am Bot.</p>
+          <br>
+          <input id="userBox" type="text" onkeydown="if (event.keyCode == 13) {talk()}" class="chatBoxInputArea">
+        </div>
+        <img id="bot" src="../images/bot.png">
+        <script>
+          $(".bot").hide();
+          $("#title").hide();
+          $("#userText").hide();
+          $(".chatBoxInputArea").hide();
+
+          function hideChatBox() {
+            $(".bot").hide();
+            $("#title").hide();
+            $("#userText").hide();
+            $(".chatBoxInputArea").hide();
+          }
+
+          function botImageClicked() {
+              $(".bot").show();
+              $("#title").show();
+              $("#userText").show();
+              $(".chatBoxInputArea").show();
+         }
+
+         $("#bot").click(botImageClicked);
+         $("#hide").click(hideChatBox);
+
+        know = {
+            "Hello": "Hi",
+            "How are you" : "Good",
+            "Ok" : ":)",
+            "ur cool" : "noiceeeee"
+        };
+        function talk() {
+            var user = $("#userBox").val();
+            document.getElementById("userBox").value = "";
+            // document.getElementById("userText").innerHTML += "You: " + user+"<br>";
+            $("#userText").text("You: " + user);
+            if (user in know) {
+                $("#responses").text("Bot: " + know[user]);
+            } else {
+                document.getElementById("chatLog").innerHTML += "Bot: I don't understand... <br> <br>";
+            }
+          } 
+        </script>
   </body>
 </html>
