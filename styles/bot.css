@@ -43,6 +43,7 @@ a:hover {
   bottom: 0px;
   right: 0px;
   cursor:pointer;
+  width: 40px;
 }
 
 #title {
@@ -60,7 +61,7 @@ a:hover {
   border: 2px solid black;
   position: absolute;
   right: 0px;
-  bottom: 60px;
+  bottom: 40px;
 }
 
 #hide {
